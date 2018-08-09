@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.main {
+    font-family: 'Nunito', sans-serif;
+}
+.nav-wrapper {
+    background-color: #26A69A;
+    padding-left: 10px;
+    a {
+        font-size: 22px;
+    }
+}
+
+.selection {
+    margin-top: 5px;
+    width: 30%;
+    float: left;
+}
+
+.search {
+    margin-top: 5px;
+    width: 70%;
+    float: right;
+}
+
+.table {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    font-size: 14px;
+}
