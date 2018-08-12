@@ -15,7 +15,14 @@ export class SearchPipe implements PipeTransform {
       return banks.filter(
         (bank) => {
           //If matched bank branch is in the array it will return bank branch
-          return bank.branch.toLowerCase().includes(filtername.toLowerCase());
+          return bank.branch.toLowerCase().includes(filtername.toLowerCase())
+              || bank.bank_id.toString().toLowerCase().includes(filtername.toLowerCase())
+              || bank.bank_name.toLowerCase().includes(filtername.toLowerCase())
+              || bank.ifsc.toLowerCase().includes(filtername.toLowerCase())
+              || bank.address.toLowerCase().includes(filtername.toLowerCase())
+              || bank.city.toLowerCase().includes(filtername.toLowerCase())
+              || bank.district.toLowerCase().includes(filtername.toLowerCase())
+              || bank.state.toLowerCase().includes(filtername.toLowerCase());
         }
       );
     }
